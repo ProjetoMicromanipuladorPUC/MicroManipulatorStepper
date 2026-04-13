@@ -1,6 +1,8 @@
 from open_micro_stage_api import OpenMicroStageInterface
 
 oms = OpenMicroStageInterface(show_communication=True, show_log_messages=True)
+
+# Porta COM3 para conectar no Windows. O resto é igual o usage_example.py
 oms.connect(port='COM3', baud_rate=115200)
 
 # home device
